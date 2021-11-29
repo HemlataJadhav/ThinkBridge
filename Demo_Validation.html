@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm()
+        {
+            let x=document.forms["MyLoginForm"]["username"].value;
+            if(x=="")
+            {
+                alert("dont try to submit blank value");
+                return false;
+            }
+            let y=document.forms["MyLoginForm"]["EmpID"].value;
+            let text;
+            if(isNaN(y) || y<1 || y>99)
+                {
+                    alert("out of range");
+                    
+                }
+                else 
+                {
+                    alert("This is the valid emp ID");
+                }
+                document.getElementById("Demo").innerHTML=text;
+        }
+    
+    </script>
+    
+</head>
+<body>
+    <div>
+        <form name="MyLoginForm" onsubmit="return validateForm()" method="post">
+            User Name:<input type="text" name="username" required>
+            Emp ID:<input type="text" name="EmpID">
+            <input type="submit" value="submit">
+
+        </form>
+    </div>
+    <p id="Demo"></p>
+</body>
+</html>
