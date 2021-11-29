@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>here we are searching for Bridge in Thing
+         bridge and showing its position</p>
+         
+    <p id="Demo"></p>
+    <p id="Demo1"></p>
+    <p id="Demo2"></p>
+    <script>
+        let text="The Thinking Bridge";
+        let n=text.search("Think");
+        let pattern=/king/i;
+        let result=text.match(pattern);
+        document.getElementById("Demo").innerHTML=n;
+        document.getElementById("Demo1").innerHTML=result;
+        document.getElementById("Demo2").innerHTML=text.replace(/Bridge/i,"Mind");
+    </script>
+</body>
+</html>
