@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Demo"></p>
+    <p> Implementing Global Search For Finding Sequence</p>
+    <script>
+        let text="10,100,1000,10000,100000";
+        let mailText="abc@gmail.com,xyz@gmail.com";
+        let pattern=/gmail.com/g
+        let result=(mailText.match(pattern)).length;
+        document.getElementById("Demo").innerHTML=result;
+       
+    </script>
+    
+</body>
+</html>
